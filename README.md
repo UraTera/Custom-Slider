@@ -51,3 +51,9 @@ wave          |Uniform wave
 stretch       |Stretching wave
 increase      |Increscent wave
 
+Methods:
+```
+setValue, getValue
+```
+
+
