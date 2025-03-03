@@ -51,6 +51,17 @@ wave          |Uniform wave
 stretch       |Stretching wave
 increase      |Increscent wave
 
+Value change listener:
+
+```
+var myValue = 0f
+
+slider.setOnChangeListener {
+    myValue = it
+}
+```
+
+
 Methods:
 ```
 setValue, getValue
