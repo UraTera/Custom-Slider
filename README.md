@@ -53,6 +53,7 @@ increase      |Increscent wave
 
 Value change listener:
 
+Kotlin
 ```
 var myValue = 0f
 
@@ -60,8 +61,15 @@ slider.setOnChangeListener {
     myValue = it
 }
 ```
+Java
+```
+float myValue;
 
-
+slider.setOnChangeListener(aFloat -> {
+    myValue = aFloat;
+    return null;
+});
+```
 Methods:
 ```
 setValue, getValue
