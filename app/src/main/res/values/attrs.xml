@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SliderCustom">
+
+        <attr name="max" format="float"/>
+        <attr name="min" format="float"/>
+        <attr name="value" format="float"/>
+
+        <!-- Палец -->
+        <attr name="thumbRadius" format="dimension"/>
+        <attr name="thumbWidth" format="dimension"/>
+        <attr name="thumbHeight" format="dimension"/>
+        <attr name="thumbColor" format="color"/>
+        <attr name="thumbStroke" format="dimension"/>
+        <attr name="thumbStrokeColor" format="color"/>
+        <attr name="thumbIcon" format="reference"/>
+        <attr name="thumbIconColor" format="color"/>
+        <attr name="thumbShowHalo" format="boolean"/>
+
+        <attr name="thumbStyle" format="enum">
+            <enum name="circular" value="0"/>
+            <enum name="round_rect" value="1"/>
+        </attr>
+
+        <!-- Дорожка-->
+        <attr name="trackHeight" format="dimension"/>
+        <attr name="trackActiveColor" format="color"/>
+        <attr name="trackInactiveColor" format="color"/>
+        <attr name="trackChangeColor" format="boolean"/>
+        <attr name="trackEndColor" format="color"/>
+
+        <attr name="trackStyle" format="enum">
+            <enum name="normal" value="0"/>
+            <enum name="wave" value="1"/>
+            <enum name="stretch" value="2"/>
+            <enum name="increase" value="3"/>
+        </attr>
+
+        <!-- Волна -->
+        <attr name="waveCount" format="integer"/>
+        <attr name="waveSweep" format="dimension"/>
+        <attr name="waveWidth" format="dimension"/>
+
+    </declare-styleable>
+
+
+</resources>

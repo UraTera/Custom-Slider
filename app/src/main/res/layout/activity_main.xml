@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/text"
+            android:text="Wave"/>
+
+        <com.tera.custom_slider.SliderCustom
+            android:id="@+id/slWave"
+            style="@style/slider"
+            app:value="30"
+            app:trackInactiveColor="@color/green"
+            app:trackStyle="wave"
+            app:thumbShowHalo="false"/>
+
+        <TextView
+            style="@style/text"
+            android:text="Stretch" />
+
+        <com.tera.custom_slider.SliderCustom
+            android:id="@+id/slStretch"
+            style="@style/slider"
+            app:value="30"
+            app:thumbStyle="round_rect"
+            app:trackActiveColor="@color/black"
+            app:trackEndColor="@color/red"
+            app:trackChangeColor="true"
+            app:trackStyle="stretch"
+            app:waveSweep="25dp" />
+
+        <TextView
+            style="@style/text"
+            android:text="Increase" />
+
+        <com.tera.custom_slider.SliderCustom
+            android:id="@+id/slIincrease"
+            style="@style/slider"
+            app:thumbIcon="@drawable/dinamik_32"
+            app:trackHeight="10dp"
+            app:trackStyle="increase"
+            app:value="70"
+            app:waveSweep="30dp"
+            app:waveWidth="5dp" />
+
+        <TextView
+            style="@style/text"
+            android:layout_marginBottom="10dp"
+            android:text="Normal" />
+
+        <TextView
+            android:id="@+id/tvNormal"
+            style="@style/text"
+            android:visibility="visible"
+            android:text="0.0" />
+
+        <com.tera.custom_slider.SliderCustom
+            android:id="@+id/slNormal"
+            style="@style/slider"
+            app:value="40"
+            app:thumbColor="@color/yellow"
+            app:thumbRadius="15dp"
+            app:thumbStroke="4dp"
+            app:thumbStrokeColor="@color/red"
+            app:trackHeight="15dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
