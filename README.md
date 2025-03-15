@@ -6,15 +6,15 @@ To use the ready-made library, add the dependency:
 ```
 dependencies {
 
-    implementation("io.github.uratera:slider:1.0.1")
+    implementation("io.github.uratera:slider:1.0.2")
 }
 ```
 
 ### Attributes
 |Attributes    |Description   |Default value|
 |--------------|--------------|-------------|
-max            |Maximum value |100
-min            |Minimum value |0
+valueMax       |Maximum value |100
+valueMin       |Minimum value |0
 value          |Value         |0
 thumbColor     |Thumb color   |purple-blue
 thumbHeight    |Thumb height  |26dp
