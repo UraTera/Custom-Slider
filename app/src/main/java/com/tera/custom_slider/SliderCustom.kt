@@ -125,8 +125,8 @@ class SliderCustom(
     init {
         val a = context.obtainStyledAttributes(attrs, R.styleable.SliderCustom)
 
-        mMax = a.getFloat(R.styleable.SliderCustom_max, 100f)
-        mMin = a.getFloat(R.styleable.SliderCustom_min, 0f)
+        mMax = a.getFloat(R.styleable.SliderCustom_valueMax, 100f)
+        mMin = a.getFloat(R.styleable.SliderCustom_valueMin, 0f)
         mValue = a.getFloat(R.styleable.SliderCustom_value, 0f)
 
         mThumbRadius = a.getDimensionPixelSize(R.styleable.SliderCustom_thumbRadius, 25).toFloat()
@@ -153,6 +153,7 @@ class SliderCustom(
         a.recycle()
 
         if (mValue > mMax) mValue = mMax
+        if (mValue < mMin) mValue = mMin
 
         initPaint()
         initParams()

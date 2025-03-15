@@ -3,8 +3,8 @@
 
     <declare-styleable name="SliderCustom">
 
-        <attr name="max" format="float"/>
-        <attr name="min" format="float"/>
+        <attr name="valueMax" format="float"/>
+        <attr name="valueMin" format="float"/>
         <attr name="value" format="float"/>
 
         <!-- Палец -->

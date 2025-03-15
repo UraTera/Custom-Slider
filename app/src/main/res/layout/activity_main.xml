@@ -27,7 +27,7 @@
         <com.tera.custom_slider.SliderCustom
             android:id="@+id/slWave"
             style="@style/slider"
-            app:value="30"
+            app:value="40"
             app:trackInactiveColor="@color/green"
             app:trackStyle="wave"
             app:thumbShowHalo="false"/>
